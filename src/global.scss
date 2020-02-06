@@ -9,18 +9,47 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+
 /* Core CSS required for Ionic components to work properly */
+
 @import "~@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
+
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
+
 @import "~@ionic/angular/css/padding.css";
 @import "~@ionic/angular/css/float-elements.css";
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+ion-list {
+    background-color: #222428 !important;
+}
+
+.tab-selected {
+    color: #52c7b8;
+}
+
+:root {
+    --ion-color-chido: #52c7b8;
+    --ion-color-chido-rgb: 82, 199, 184;
+    --ion-color-chido-contrast: #000000;
+    --ion-color-chido-contrast-rgb: 0, 0, 0;
+    --ion-color-chido-shade: #48afa2;
+    --ion-color-chido-tint: #63cdbf;
+}
+
+.ion-color-chido {
+    --ion-color-base: var(--ion-color-chido);
+    --ion-color-base-rgb: var(--ion-color-chido-rgb);
+    --ion-color-contrast: var(--ion-color-chido-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-chido-contrast-rgb);
+    --ion-color-shade: var(--ion-color-chido-shade);
+    --ion-color-tint: var(--ion-color-chido-tint);
+}
