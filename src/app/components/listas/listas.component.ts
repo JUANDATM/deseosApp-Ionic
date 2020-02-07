@@ -16,7 +16,6 @@ export class ListasComponent implements OnInit {
   constructor( public deseosService: DeseosService,
                private router: Router,
                private alertController: AlertController) { }
-
   ngOnInit() {}
   listaSeleccionada(lista: Lista) {
     console.log(lista);
@@ -29,7 +28,6 @@ export class ListasComponent implements OnInit {
   borrarLista(lista: Lista) {
     this.deseosService.borrarLista( lista );
   }
-
   async editarLista(lista: Lista) {
     const alert = await this.alertController.create({
       header: 'Nueva Lista',
